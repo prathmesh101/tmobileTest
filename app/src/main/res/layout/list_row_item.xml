@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="@dimen/dp_5"
+        app:cardCornerRadius="@dimen/dp_2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="4.50"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/image_view_movie"
+                android:layout_width="80dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_gravity="center_vertical"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_18"
+                android:maxLines="3"
+                android:layout_margin="@dimen/dp_10"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/android_name_text_view"
+                android:layout_width="@dimen/dp_0"
+                android:layout_weight="1.50"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLines="3"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_20"
+                tools:text="Eclairs" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

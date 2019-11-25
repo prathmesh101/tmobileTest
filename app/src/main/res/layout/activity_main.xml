@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tmobile.github.activity.UserSearchActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_18"
+        android:maxLines="3"
+        android:layout_margin="@dimen/dp_10"
+        android:textStyle="bold"
+        android:text="@string/search_git" />
+
+
+
+
+    <EditText
+        android:id="@+id/search_user_name"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/sp_18"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="@string/search_git_users"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:singleLine="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/internet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_18"
+        android:maxLines="3"
+        android:visibility="gone"
+        android:padding="@dimen/dp_30"
+        android:layout_marginTop="90dp"
+        android:text="@string/check_internet" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_name"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp_5" />
+
+</LinearLayout>

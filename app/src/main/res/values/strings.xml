@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">T-Mobile</string>
+    <string name="github_searcher">Github Searcher</string>
+    <string name="search_repo">Search for User\'s Repositories</string>
+    <string name="search_git">Github Searcher</string>
+    <string name="check_internet">Please Connect with internet</string>
+    <string name="search_git_users">Search for Users</string>
+</resources>
